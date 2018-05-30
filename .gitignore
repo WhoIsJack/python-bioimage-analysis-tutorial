@@ -1,10 +1,2 @@
-main_tutorial/.ipynb_checkpoints/*
-main_tutorial/.ipynb_checkpoints
-main_tutorial/.ipynb_checkpoints/
-pre_tutorial/.ipynb_checkpoints
-pre_tutorial/.ipynb_checkpoints/*
-pre_tutorial/.ipynb_checkpoints/
-data_analysis_tutorial/.ipynb_checkpoints
-data_analysis_tutorial/.ipynb_checkpoints/*
-data_analysis_tutorial/.ipynb_checkpoints/
-*.pyc
+__pycache__
+*.ipynb_checkpoints*
