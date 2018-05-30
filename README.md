@@ -1,82 +1,76 @@
-Python Workshop - Image Processing
-==================================
+Python BioImage Analysis Tutorial
+=================================
 
-*(This is a clone of the corresponding [EMBL GitLab repo](https://git.embl.de/grp-bio-it/python-workshop-image-processing))*
-
-
-## Course Aims and Overview
-
-This course teaches the basics of bio-image processing, segmentation and analysis in python. It is based on tutorials that integrate explanations and exercises, enabling participants to build their own image analysis pipeline step by step.
-
-All material is provided as Jupyter notebooks. To find out more about how to run these materials interactively, see the [Jupyter documentation](https://jupyter.readthedocs.io/en/latest/index.html).
-
-The [`main_tutorial`](./main_tutorial/) uses single-cell segmentation of a confocal fluorescence microscopy image to illustrate key concepts from preprocessing to segmentation to data analysis. It includes a tutorial on how to apply such a pipeline to multiple images at once (batch processing).
-
-The main tutorial is complemented by the [`pre_tutorial`](./pre_tutorial/) content, which provides some basics of Jupyter, `matplotlib` and an introduction to `numpy` and working with arrays.
-
-This course is aimed at people with basic to intermediate knowledge of python and basic knowledge of microscopy. For people with basic knowledge of image processing, the tutorials can be followed without attending the lectures.
+*originally created in 2016*    
+*updated and converted to a Jupyter notebook in 2017*    
+*updated and converted to python 3 in 2018*    
+*by Jonas Hartmann (Gilmour group, EMBL Heidelberg)*    
 
 
-## Instructions on following this course
+## Aims and Overview
 
-- If you have only very basic knowledge of python or if you are feeling a little rusty, you should start with the `pre_tutorial`, which includes two notebooks: one on `numpy` arrays and one on the basics of Jupyter and `matplotlib`. If you are more experienced, you may want to skim or skip the pre-tutorial.
+This tutorial teaches the basics of bio-image processing, segmentation and analysis in python. It integrates explanations and exercises in a (hopefully) self-explanatory fashion, enabling participants to build their own image analysis pipelines step by step.
 
+The tutorial uses single-cell segmentation of 2D confocal fluorescence microscopy images to illustrate key concepts from preprocessing to segmentation to (very basic) data analysis. It concludes with a small section on how to apply such a pipeline to multiple images at once (batch processing).
 
-- In the `main_tutorial`, it is recommended to follow the `tutorial_pipeline` first. By following the exercises, you should be able to implement your own segmentation pipeline. If you run into trouble, you can use the provided solutions as inspiration - however, it is *highly* recommended to spend a lot of time figuring things out yourself, as this is an important part of any programming exercise.
+Everything you need to know to get started can be found in the jupyter notebook `image_analysis_tutorial.ipynb`. To find out more about how to run these materials interactively, see the [Jupyter documentation](https://jupyter.readthedocs.io/en/latest/index.html).
 
-
-## Concepts discussed in course lectures
-
-1. **Introductory Material**
-   	* Working with the Jupyter Notebook
-	* Importing packages and modules
-	* Reading data from files
-	* A brief introduction to `matplotlib`
-	* Data and variable types
-	* An introduction to `numpy`
-	* Arrays, indexing, slicing
-	* Using the documentation
+Note that this tutorial was part of a course aimed at people with basic knowledge of python. The course included introductory sessions/lectures on scientific python (in particular `numpy` and `matplotlib`) as well as on image analysis (see the slides in this repository). For those tackling this tutorial on their own, it is therefore recommended to first acquire basic scientific python knowledge elsewhere (e.g. at [python-course.eu](https://www.python-course.eu)).
 
 
-2. **Basics of Bio-Image Processing**
-	* Digital images
-		* Images as arrays of numbers
-		* Look-up tables (LUTs)
-		* Dimensions
-		* Bit-depth
-	* Image analysis pipelines
-		* Preprocessing: filters, kernels, convolution, background subtraction
-		* Foreground detection: thresholding, morphological operations
-		* Segmentation: labels, seeds, watershed
-		* Postprocessing: object filtering
-		* Making measurements
+## Content Overview
+
+- Lecture
+    - Working with digital images
+        - Images as arrays of numbers
+        - Look-up tables (LUTs)
+        - Dimensions
+        - Bit-depth
+    - Image analysis pipelines
+        - Preprocessing: filters, kernels, convolution, background subtraction
+        - Foreground detection: thresholding, morphological operations
+        - Segmentation: labels, seeds, watershed
+        - Postprocessing: object filtering
+        - Making measurements
 
 
-3. **Introduction to the Tutorial Pipeline**
-	* Automated Single-Cell Segmentation
-		* Why? (advantages of single-cell approaches)
-		* How? (segmentation pipeline)
-		* What? (2D spinning disc confocal fluorescence microscopy images of Zebrafish embryonic cells)
-		* Who? (YOU!)
+- Tutorial
+    - Importing Modules & Packages
+    - Loading & Handling Image Data
+    - Preprocessing
+    - Manual Thresholding & Threshold Detection
+    - Adaptive Thresholding
+    - Improving Masks with Binary Morphology
+    - Connected Components Labeling
+    - Cell Segmentation by Seeding & Expansion
+    - Postprocessing: Removing Cells at the Image Border
+    - Identifying Cell Edges
+    - Extracting Quantitative Measurements
+    - Simple Analysis & Visualization
+    - Writing Output to Files
+    - Batch Processing
 
 
-3. **Advanced materials** *[not yet available; may be added later]*
-	* What comes after segmentation: downstream data further analysis
-	* Code Optimisation (vectorisation, multiprocessing, cluster processing)
+## Old Versions and Other Sources
+
+This was part of the EMBL Bio-IT/ALMF `Image Analysis with Python 2018` course (see the [EMBL Gitlab repo](https://git.embl.de/grp-bio-it/image-analysis-with-python-2018)).
+
+If you are looking for the python 2 version from 2017, see the `2017_legacy_python_version` branch or the corresponding [EMBL GitLab repo](https://git.embl.de/grp-bio-it/python-workshop-image-processing).
+
+The original 2016 materials can be found in Karin Sasaki's corresponding Github [repo](https://github.com/karinsasaki/python-workshop-image-processing).
 
 
-## Instructors
+## Acknowledgements
 
-- Jonas Hartmann (Gilmour Lab, CBB, EMBL)
-- Toby Hodges (Bio-IT, Zeller Team, SCB, EMBL)
+The first version of this tutorial was created for the `EMBL Python Workshop - Image Processing` course organized by Karin Sasaki and Jonas Hartmann in 2016. Additional lecturers and TAs contributing to this course were Kota Miura, Volker Hilsenstein, Aliaksandr Halavatyi, Imre Gaspar, and Toby Hodges.
+
+The second installment (the `EMBL Bio-IT Image Processing Course`, 2017) was organized and taught by Jonas Hartmann and Toby Hodges.
+
+The third version of this tutorial was part of the `EMBL Bio-IT/ALMF Image Analysis with Python 2018` course, organized by Jonas Hartmann and Toby Hodges in collaboration with Tobias Rasse and Volker Hilsenstein. Additional organizational help came from Christian Tischer and Malvika Sharan.
+
+Many thanks to all the helpful collaborators and the interested students who were instrumental in making these courses a success.
 
 
-## Inspiration
+## Feedback
 
-This repository was forked from [Karin Sasaki's materials on GitHub](https://github.com/karinsasaki/python-workshop-image-processing). These materials have been adapted from the original version, written and taught by Karin Sasaki, Jonas Hartmann, Kota Miura, Volker Hinsenstein, Aliaksandr Halavatyi, Imre Gaspar, and Toby Hodges.
-
-## Feedback 
-
-We welcome any feedback on this course! 
-
-Feel free to contact us at *jonas.hartmann@embl.de* or *toby.hodges@embl.de*.
+Feedback on this tutorial is always welcome! Please open an issue on GitHub or write to *jonas.hartmann_at_embl.de*.
