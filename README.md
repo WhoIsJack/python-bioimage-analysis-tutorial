@@ -6,6 +6,7 @@ Python BioImage Analysis Tutorial
 *updated and converted to python 3 in 2018*    
 *by Jonas Hartmann (Gilmour group, EMBL Heidelberg)*    
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/WhoIsJack/python-bioimage-analysis-tutorial/master)
 
 ## Aims and Overview
 
