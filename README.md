@@ -13,7 +13,7 @@ This tutorial teaches the basics of bio-image processing, segmentation and analy
 
 The tutorial uses single-cell segmentation of 2D confocal fluorescence microscopy images to illustrate key concepts from preprocessing to segmentation to (very basic) data analysis. It concludes with a small section on how to apply such a pipeline to multiple images at once (batch processing).
 
-Everything you need to know to get started can be found in the jupyter notebook `image_analysis_tutorial.ipynb`. To find out more about how to run these materials interactively, see the [Jupyter documentation](https://jupyter.readthedocs.io/en/latest/index.html).
+Everything you need to know to get started can be found in the jupyter notebook [`image_analysis_tutorial.ipynb`](image_analysis_tutorial.ipynb). To find out more about how to run these materials interactively, see the [Jupyter documentation](https://jupyter.readthedocs.io/en/latest/index.html).
 
 Note that this tutorial was part of a course aimed at people with basic knowledge of python. The course included introductory sessions/lectures on scientific python (in particular `numpy` and `matplotlib`) as well as on image analysis (see the slides in this repository). For those tackling this tutorial on their own, it is therefore recommended to first acquire basic scientific python knowledge elsewhere (e.g. at [python-course.eu](https://www.python-course.eu)).
 
