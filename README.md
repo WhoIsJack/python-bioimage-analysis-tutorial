@@ -79,4 +79,4 @@ Many thanks to all the helpful collaborators and the interested students who wer
 
 ## Feedback
 
-Feedback on this tutorial is always welcome! Please open an issue on GitHub or write to *jonas.hartmann_at_embl.de*.
+Feedback on this tutorial is always welcome! Please open an issue on GitHub or write to *jonas.hartmann(AT)ucl.ac.uk*.
