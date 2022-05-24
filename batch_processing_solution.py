@@ -62,7 +62,7 @@ def run_pipeline(dirpath, filename):
     SE = (np.mgrid[:i,:i][0] - np.floor(i/2))**2 + (np.mgrid[:i,:i][1] - np.floor(i/2))**2 <= np.floor(i/2)**2
 
     from skimage.filters import rank 
-    bg = rank.mean(img_smooth, selem=SE)
+    bg = rank.mean(img_smooth, footprint=SE)
 
     mem = img_smooth > bg
 
@@ -88,19 +88,21 @@ def run_pipeline(dirpath, filename):
     dist_trans_smooth = ndi.filters.gaussian_filter(dist_trans, sigma=5)
 
     from skimage.feature import peak_local_max
-    seeds = peak_local_max(dist_trans_smooth, indices=False, min_distance=10)
+    seed_coords = peak_local_max(dist_trans_smooth, min_distance=10)
+    seeds = np.zeros_like(dist_trans_smooth, dtype=bool)
+    seeds[tuple(seed_coords.T)] = True
 
     seeds_labeled = ndi.label(seeds)[0]
 
     ### Expansion by Watershed
 
-    from skimage.morphology import watershed
+    from skimage.segmentation import watershed
     ws = watershed(img_smooth, seeds_labeled)
 
 
     ## Postprocessing: Removing Cells at the Image Border
 
-    border_mask = np.zeros(ws.shape, dtype=np.bool)
+    border_mask = np.zeros(ws.shape, dtype=bool)
     border_mask = ndi.binary_dilation(border_mask, border_value=1)
 
     clean_ws = np.copy(ws)
