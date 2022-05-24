@@ -6,7 +6,11 @@ Python BioImage Analysis Tutorial
 *updated and converted to python 3 in 2018*    
 *by Jonas Hartmann (Gilmour group, EMBL Heidelberg)*    
 
-Note that an updated an extended version of this tutorial is being developed and will hopefully be released in 2022. 🤞
+----
+
+⚠️ Note that some of the materials in this tuorial are slightly out of date by now (2022), but recent feedback has shown that the tutorial is still very useful and approachable for many learners. I would like to create an updated and slightly extended version by the end of the year, but academic pressures limit my ability to work on this, so we'll have to see how it goes. 🤞 (Jonas, May 22)
+
+-----
 
 
 ## Aims and Overview
