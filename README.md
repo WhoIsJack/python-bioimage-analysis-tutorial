@@ -4,7 +4,7 @@ Python BioImage Analysis Tutorial
 *originally created in 2016*    
 *updated and converted to a Jupyter notebook in 2017*    
 *updated and converted to python 3 in 2018*    
-*by Jonas Hartmann (Gilmour group, EMBL Heidelberg)*    
+*by Jonas Hartmann (Mayor group, University College London)*    
 
 ----
 
