@@ -53,7 +53,7 @@ def run_pipeline(dirpath, filename):
     ## Preprocessing
 
     sigma = 3
-    img_smooth = ndi.filters.gaussian_filter(img, sigma)
+    img_smooth = ndi.gaussian_filter(img, sigma)
 
 
     ## Adaptive Thresholding
@@ -85,7 +85,7 @@ def run_pipeline(dirpath, filename):
     ### Seeding by Distance Transform
 
     dist_trans = ndi.distance_transform_edt(~mem_final)
-    dist_trans_smooth = ndi.filters.gaussian_filter(dist_trans, sigma=5)
+    dist_trans_smooth = ndi.gaussian_filter(dist_trans, sigma=5)
 
     from skimage.feature import peak_local_max
     seed_coords = peak_local_max(dist_trans_smooth, min_distance=10)

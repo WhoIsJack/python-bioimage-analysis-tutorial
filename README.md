@@ -8,10 +8,11 @@ Python BioImage Analysis Tutorial
 
 ----
 
-⚠️ Note that some of the materials in this tuorial are slightly out of date by now (2022), but recent feedback has shown that the tutorial is still very useful and approachable for many learners. I would like to create an updated and slightly extended version by the end of the year, but academic pressures limit my ability to work on this, so we'll have to see how it goes. 🤞 (Jonas, May 22)
+⚠️ Note that some of the materials in this tuorial are slightly out of date by now (2023), but recent feedback has shown that the tutorial is still very useful and approachable for many learners. I would like to create an updated and slightly extended version at some point, but academic pressures limit my ability to work on this, so we'll have to see how it goes... 🤞
+
+(The latest maintenance update was done on 17.02.2023 for python 3.9.16 (basic Anaconad distro), with thanks to @Koushouu!)
 
 -----
-
 
 ## Aims and Overview
 
@@ -23,39 +24,36 @@ Everything you need to know to get started can be found in the jupyter notebook 
 
 Note that this tutorial was part of a course aimed at people with basic knowledge of python. The course included introductory sessions/lectures on scientific python (in particular `numpy` and `matplotlib`) as well as on image analysis (see the slides in this repository). For those tackling this tutorial on their own, it is therefore recommended to first acquire basic scientific python knowledge elsewhere (e.g. at [python-course.eu](https://www.python-course.eu)).
 
-
 ## Content Overview
 
 - Lecture
-    - Working with digital images
-        - Images as arrays of numbers
-        - Look-up tables (LUTs)
-        - Dimensions
-        - Bit-depth
-    - Image analysis pipelines
-        - Preprocessing: filters, kernels, convolution, background subtraction
-        - Foreground detection: thresholding, morphological operations
-        - Segmentation: labels, seeds, watershed
-        - Postprocessing: object filtering
-        - Making measurements
-
+  - Working with digital images
+    - Images as arrays of numbers
+    - Look-up tables (LUTs)
+    - Dimensions
+    - Bit-depth
+  - Image analysis pipelines
+    - Preprocessing: filters, kernels, convolution, background subtraction
+    - Foreground detection: thresholding, morphological operations
+    - Segmentation: labels, seeds, watershed
+    - Postprocessing: object filtering
+    - Making measurements
 
 - Tutorial
-    - Importing Modules & Packages
-    - Loading & Handling Image Data
-    - Preprocessing
-    - Manual Thresholding & Threshold Detection
-    - Adaptive Thresholding
-    - Improving Masks with Binary Morphology
-    - Connected Components Labeling
-    - Cell Segmentation by Seeding & Expansion
-    - Postprocessing: Removing Cells at the Image Border
-    - Identifying Cell Edges
-    - Extracting Quantitative Measurements
-    - Simple Analysis & Visualization
-    - Writing Output to Files
-    - Batch Processing
-
+  - Importing Modules & Packages
+  - Loading & Handling Image Data
+  - Preprocessing
+  - Manual Thresholding & Threshold Detection
+  - Adaptive Thresholding
+  - Improving Masks with Binary Morphology
+  - Connected Components Labeling
+  - Cell Segmentation by Seeding & Expansion
+  - Postprocessing: Removing Cells at the Image Border
+  - Identifying Cell Edges
+  - Extracting Quantitative Measurements
+  - Simple Analysis & Visualization
+  - Writing Output to Files
+  - Batch Processing
 
 ## Old Versions and Other Sources
 
@@ -64,7 +62,6 @@ This was part of the EMBL Bio-IT/ALMF `Image Analysis with Python 2018` course (
 If you are looking for the python 2 version from 2017, see the `2017_legacy_python_version` branch or the corresponding [EMBL GitLab repo](https://git.embl.de/grp-bio-it/python-workshop-image-processing).
 
 The original 2016 materials can be found in Karin Sasaki's corresponding Github [repo](https://github.com/karinsasaki/python-workshop-image-processing).
-
 
 ## Acknowledgements
 
@@ -75,7 +72,6 @@ The second installment (the `EMBL Bio-IT Image Processing Course`, 2017) was org
 The third version of this tutorial was part of the `EMBL Bio-IT/ALMF Image Analysis with Python 2018` course, organized by Jonas Hartmann and Toby Hodges in collaboration with Tobias Rasse and Volker Hilsenstein. Additional organizational help came from Christian Tischer and Malvika Sharan.
 
 Many thanks to all the helpful collaborators and the interested students who were instrumental in making these courses a success.
-
 
 ## Feedback
 
