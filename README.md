@@ -10,7 +10,7 @@ Python BioImage Analysis Tutorial
 
 ⚠️ Note that some of the materials in this tuorial are slightly out of date by now (2023), but recent feedback has shown that the tutorial is still very useful and approachable for many learners. I would like to create an updated and slightly extended version at some point, but academic pressures limit my ability to work on this, so we'll have to see how it goes... 🤞
 
-(The latest maintenance update was done on 17.02.2023 for python 3.9.16 (basic Anaconad distro), with thanks to @Koushouu!)
+(Latest maintenance update: 17.02.2023, python 3.9.16 (basic Anaconda distro), with thanks to @Koushouu!)
 
 -----
 
